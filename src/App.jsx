@@ -486,7 +486,7 @@ export default function App() {
             <div style={{ display:"flex", alignItems:"center", marginBottom:4 }}>
               <div style={{ fontSize:17, fontWeight:700, color:"#fff" }}>📚 La bibliothèque des neuromythes</div>
               <button onClick={()=>{setForm(BOŞ_FORM);setDuzenlemId(null);setFormHata({});setAktifEkran("mitEkle");}}
-                style={{ marginLeft:"auto", background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 12px", fontSize:12, cursor:"pointer", fontWeight:600 }}>+ Yeni Mit</button>
+                style={{ marginLeft:"auto", background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 12px", fontSize:12, cursor:"pointer", fontWeight:600 }}>+ Nouveau mythe</button>
             </div>
             <div style={{ fontSize:12, color:"#7986a3", marginBottom:12 }}>{mitler.length} neuromythes · {new Set(mitler.map(m=>m.kategori)).size} catégories</div>
             <div style={{ display:"flex", gap:7, overflowX:"auto", paddingBottom:8, marginBottom:12 }}>
