@@ -55,7 +55,7 @@ export default function App() {
   const [aktifEkran, setAktifEkran] = useState("ana");
   const [secilenMit, setSecilenMit] = useState(null);
   const [oncekiEkran, setOncekiEkran] = useState("kutuphane");
-  const [kategori, setKategori] = useState("Tous");
+  const [, setKategori] = useState("Tous");
   const [analiz, setAnaliz] = useState({ metin: "", sonuclar: [], yapildi: false, aiSonuc: null });
   const [chatMesajlar, setChatMesajlar] = useState([
     { rol: "ai", icerik: "Bonjour ! Je suis l'assistant NöroFen 🧠 Je peux vous aider à détecter les neuromythes dans vos plans de cours !" }
@@ -88,7 +88,7 @@ export default function App() {
     if (basariMesaj) { const t = setTimeout(() => setBasariMesaj(""), 3000); return () => clearTimeout(t); }
   }, [basariMesaj]);
 
-  const kategoriler = ["Tous", ...new Set(mitler.map(n => n.kategori))];
+  const ler = ["Tous", ...new Set(mitler.map(n => n.kategori))];
   const filtreliMitler = kategori === "Tous" ? mitler : mitler.filter(m => m.kategori === kategori);
   const mevcutKategoriler = [...new Set(mitler.map(n => n.kategori))];
 
@@ -488,7 +488,7 @@ export default function App() {
               <button onClick={()=>{setForm(BOŞ_FORM);setDuzenlemId(null);setFormHata({});setAktifEkran("mitEkle");}}
                 style={{ marginLeft:"auto", background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 12px", fontSize:12, cursor:"pointer", fontWeight:600 }}>+ Yeni Mit</button>
             </div>
-            <div style={{ fontSize:12, color:"#7986a3", marginBottom:12 }}>{mitler.length} nöromit · {new Set(mitler.map(m=>m.kategori)).size} kategori</div>
+            <div style={{ fontSize:12, color:"#7986a3", marginBottom:12 }}>{mitler.length} neuromythes · {new Set(mitler.map(m=>m.kategori)).size} catégories</div>
             <div style={{ display:"flex", gap:7, overflowX:"auto", paddingBottom:8, marginBottom:12 }}>
               {kategoriler.map(k => (
                 <button key={k} onClick={()=>setKategori(k)} style={{ whiteSpace:"nowrap", padding:"5px 12px", borderRadius:18, border:"1px solid", borderColor:kategori===k?"#4fc3f7":"rgba(255,255,255,0.1)", background:kategori===k?"rgba(79,195,247,0.12)":"transparent", color:kategori===k?"#4fc3f7":"#7986a3", fontSize:11, cursor:"pointer" }}>{k}</button>
