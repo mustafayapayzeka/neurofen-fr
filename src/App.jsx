@@ -268,7 +268,7 @@ export default function App() {
             {arastirmalar.length > 0 && (
               <div onClick={()=>setAktifEkran("arastirmalar")} style={{ background:`linear-gradient(135deg,${arastirmalar[0].renk}18,rgba(255,255,255,0.02))`, border:`1px solid ${arastirmalar[0].renk}30`, borderRadius:14, padding:14, marginBottom:16, cursor:"pointer" }}>
                 <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:6 }}>
-                  <span style={{ fontSize:10, color:arastirmalar[0].renk, fontFamily:"monospace", letterSpacing:"1px" }}>🔬 GÜNCEL ARAŞTIRMA</span>
+                  <span style={{ fontSize:10, color:arastirmalar[0].renk, fontFamily:"monospace", letterSpacing:"1px" }}>🔬 ACTUALITÉS DE LA RECHERCHE</span>
                   <span style={{ marginLeft:"auto", background:`${arastirmalar[0].renk}22`, color:arastirmalar[0].renk, borderRadius:6, padding:"2px 8px", fontSize:10, fontFamily:"monospace" }}>{arastirmalar[0].yil}</span>
                 </div>
                 <div style={{ fontSize:13, fontWeight:600, color:"#fff", marginBottom:4 }}>{arastirmalar[0].baslik}</div>
