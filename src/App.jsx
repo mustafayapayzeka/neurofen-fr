@@ -385,8 +385,8 @@ export default function App() {
         {/* ── GÜNCEL ARAŞTIRMALAR (kullanıcı görünümü) ───────────────── */}
         {aktifEkran === "arastirmalar" && (
           <div style={{ padding:"18px 16px" }}>
-            <div style={{ fontSize:17, fontWeight:700, color:"#fff", marginBottom:4 }}>🔬 Güncel Araştırmalar</div>
-            <div style={{ fontSize:12, color:"#7986a3", marginBottom:18 }}>Nöroeğitim alanındaki son çalışmalar</div>
+            <div style={{ fontSize:17, fontWeight:700, color:"#fff", marginBottom:4 }}>🔬 Actualités de la Recherche</div>
+            <div style={{ fontSize:12, color:"#7986a3", marginBottom:18 }}>Dernières études en neurosciences de l'éducation</div>
 
             {arastirmalar.length === 0 ? (
               <div style={{ textAlign:"center", padding:"40px 20px", color:"#7986a3" }}>
