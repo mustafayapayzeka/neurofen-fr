@@ -516,7 +516,7 @@ export default function App() {
         {aktifEkran === "detay" && secilenMit && (
           <div style={{ padding:"18px 16px" }}>
             <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:16 }}>
-              <button onClick={()=>setAktifEkran(oncekiEkran)} style={{ background:"none", border:"none", color:"#4fc3f7", cursor:"pointer", fontSize:12, padding:0, fontFamily:"monospace" }}>← Geri</button>
+              <button onClick={()=>setAktifEkran(oncekiEkran)} style={{ background:"none", border:"none", color:"#4fc3f7", cursor:"pointer", fontSize:12, padding:0, fontFamily:"monospace" }}>← Retour</button>
               <div style={{ marginLeft:"auto", display:"flex", gap:8 }}>
                 <button onClick={()=>duzenlemeBaslat(secilenMit)} style={{ background:"rgba(79,195,247,0.1)", border:"1px solid rgba(79,195,247,0.2)", color:"#4fc3f7", borderRadius:7, padding:"5px 10px", fontSize:11, cursor:"pointer" }}>✏️ Düzenle</button>
                 <button onClick={()=>setSilOnay(secilenMit.id)} style={{ background:"rgba(240,98,146,0.1)", border:"1px solid rgba(240,98,146,0.2)", color:"#f06292", borderRadius:7, padding:"5px 10px", fontSize:11, cursor:"pointer" }}>🗑️ Sil</button>
