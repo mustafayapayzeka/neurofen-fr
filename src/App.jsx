@@ -273,7 +273,7 @@ export default function App() {
                 </div>
                 <div style={{ fontSize:13, fontWeight:600, color:"#fff", marginBottom:4 }}>{arastirmalar[0].baslik}</div>
                 <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.5 }}>{arastirmalar[0].ozet.substring(0,90)}...</div>
-                <div style={{ fontSize:11, color:arastirmalar[0].renk, marginTop:8, fontFamily:"monospace" }}>Tüm araştırmaları gör ({arastirmalar.length}) →</div>
+                <div style={{ fontSize:11, color:arastirmalar[0].renk, marginTop:8, fontFamily:"monospace" }}>Accéder à toutes les études ({arastirmalar.length}) →</div>
               </div>
             )}
 
