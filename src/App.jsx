@@ -440,8 +440,8 @@ export default function App() {
         {/* ── ANALİZ ─────────────────────────────────────────────────── */}
         {aktifEkran === "analiz" && (
           <div style={{ padding:"18px 16px" }}>
-            <div style={{ fontSize:17, fontWeight:700, color:"#fff", marginBottom:4 }}>🔍 Metin Analizi</div>
-            <div style={{ fontSize:12, color:"#7986a3", marginBottom:14 }}>Ders planınızı yapıştırın, AI nöromitleri tespit etsin</div>
+            <div style={{ fontSize:17, fontWeight:700, color:"#fff", marginBottom:4 }}>🔍 Analyse de Contenu</div>
+            <div style={{ fontSize:12, color:"#7986a3", marginBottom:14 }}>Collez votre plan de cours, l'IA détecte les neuromythes</div>
             <textarea value={analiz.metin} onChange={e=>setAnaliz({metin:e.target.value,sonuclar:[],yapildi:false,aiSonuc:null})}
               placeholder="Écrivez ou collez votre plan de cours ici..."
               style={{...inputStil(false), minHeight:130, resize:"vertical"}} />
