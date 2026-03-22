@@ -423,11 +423,11 @@ export default function App() {
                   </div>
                   <div style={{ fontSize:16, fontWeight:700, color:"#fff", marginBottom:14, lineHeight:1.4 }}>{arastirmaDetay.baslik}</div>
                   <div style={{ background:`${arastirmaDetay.renk}12`, borderLeft:`3px solid ${arastirmaDetay.renk}`, borderRadius:10, padding:14, marginBottom:14 }}>
-                    <div style={{ fontSize:10, color:arastirmaDetay.renk, fontFamily:"monospace", letterSpacing:"0.5px", marginBottom:6 }}>ARAŞTIRMA ÖZETİ</div>
+                    <div style={{ fontSize:10, color:arastirmaDetay.renk, fontFamily:"monospace", letterSpacing:"0.5px", marginBottom:6 }}>RÉSUMÉ DE RECHERCHE</div>
                     <div style={{ fontSize:13, color:"#c5cee0", lineHeight:1.7 }}>{arastirmaDetay.ozet}</div>
                   </div>
                   <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:10, padding:12 }}>
-                    <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace", marginBottom:6 }}>📖 KAYNAK</div>
+                    <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace", marginBottom:6 }}>📖 RÉFÉRENCE</div>
                     <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.6, fontStyle:"italic" }}>{arastirmaDetay.kaynak}</div>
                   </div>
                   <button onClick={()=>setArastirmaDetay(null)} style={{ width:"100%", marginTop:16, background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:10, padding:"11px", color:"#9aa5be", fontSize:13, cursor:"pointer" }}>Kapat</button>
