@@ -55,7 +55,7 @@ export default function App() {
   const [aktifEkran, setAktifEkran] = useState("ana");
   const [secilenMit, setSecilenMit] = useState(null);
   const [oncekiEkran, setOncekiEkran] = useState("kutuphane");
-  const [, setKategori] = useState("Tous");
+  const [kategori, setKategori] = useState("Tous");
   const [analiz, setAnaliz] = useState({ metin: "", sonuclar: [], yapildi: false, aiSonuc: null });
   const [chatMesajlar, setChatMesajlar] = useState([
     { rol: "ai", icerik: "Bonjour ! Je suis l'assistant NöroFen 🧠 Je peux vous aider à détecter les neuromythes dans vos plans de cours !" }
