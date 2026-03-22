@@ -247,7 +247,7 @@ export default function App() {
             <img src="/logo.png" alt="NöroFen Logo" style={{ width:42, height:42, borderRadius:10, objectFit:"cover" }}/>
             <div>
               <div style={{ fontSize:19, fontWeight:700, color:"#fff", letterSpacing:"-0.5px" }}>NöroFen</div>
-              <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace" }}>Nöromitten Arın · Bilimle Öğret</div>
+              <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace" }}>Chasseuse de Neuromythes — Enseigner avec la Science</div>
             </div>
             <div style={{ marginLeft:"auto", fontSize:11, color:"#7986a3", fontFamily:"monospace" }}>{mitler.length} mit</div>
           </div>
