@@ -58,7 +58,7 @@ export default function App() {
   const [kategori, setKategori] = useState("Tous");
   const [analiz, setAnaliz] = useState({ metin: "", sonuclar: [], yapildi: false, aiSonuc: null });
   const [chatMesajlar, setChatMesajlar] = useState([
-    { rol: "ai", icerik: "Bonjour ! Je suis l'assistant NöroFen 🧠 Je peux vous aider à détecter les neuromythes dans vos plans de cours !" }
+    { rol: "ai", icerik: "Bonjour ! Je suis l'assistant NeuroFen 🧠 Je peux vous aider à détecter les neuromythes dans vos plans de cours !" }
   ]);
   const [chatGirdi, setChatGirdi] = useState("");
   const [chatYukleniyor, setChatYukleniyor] = useState(false);
@@ -182,7 +182,7 @@ export default function App() {
       const res = await fetch("https://api.anthropic.com/v1/messages", {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:1000,
-          system:`Tu es l'assistant IA francophone de l'application NöroFen. Tu aides les enseignants de sciences sur les neuromythes. Donne des réponses courtes et scientifiques.`,
+          system:`Tu es l'assistant IA francophone de l'application NeuroFen. Tu aides les enseignants de sciences sur les neuromythes. Donne des réponses courtes et scientifiques.`,
           messages:[{role:"user",content:mesaj}] })
       });
       const veri = await res.json();
@@ -244,9 +244,9 @@ export default function App() {
         {/* HEADER */}
         <div style={{ padding:"18px 20px 14px", borderBottom:"1px solid rgba(255,255,255,0.06)" }}>
           <div style={{ display:"flex", alignItems:"center", gap:10 }}>
-            <img src="/logo.png" alt="NöroFen Logo" style={{ width:42, height:42, borderRadius:10, objectFit:"cover" }}/>
+            <img src="/logo.png" alt="NeuroFen Logo" style={{ width:42, height:42, borderRadius:10, objectFit:"cover" }}/>
             <div>
-              <div style={{ fontSize:19, fontWeight:700, color:"#fff", letterSpacing:"-0.5px" }}>NöroFen</div>
+              <div style={{ fontSize:19, fontWeight:700, color:"#fff", letterSpacing:"-0.5px" }}>NeuroFen</div>
               <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace" }}>Chasseuse de Neuromythes — Enseigner avec la Science</div>
             </div>
             <div style={{ marginLeft:"auto", fontSize:11, color:"#7986a3", fontFamily:"monospace" }}>{mitler.length} mythes</div>
@@ -310,7 +310,7 @@ export default function App() {
                   {/* Vizyon */}
                   {[
                     { id:"vizyon", ikon:"🧠", baslik:"Objectif & Vision", renk:"#4fc3f7",
-                      icerik: <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.7, borderLeft:"2px solid rgba(79,195,247,0.3)", paddingLeft:10 }}>NöroFen est une application guide basée sur l'IA, développée pour détecter les mythes neuroscientifiques que les enseignants de sciences utilisent inconsciemment dans leurs plans de cours et proposer des alternatives scientifiques.<br/><br/><span style={{color:"#4fc3f7",fontFamily:"monospace",fontSize:10}}>v1.0.0 · Mars 2026</span></div>
+                      icerik: <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.7, borderLeft:"2px solid rgba(79,195,247,0.3)", paddingLeft:10 }}>NeuroFen est une application guide basée sur l'IA, développée pour détecter les mythes neuroscientifiques que les enseignants de sciences utilisent inconsciemment dans leurs plans de cours et proposer des alternatives scientifiques.<br/><br/><span style={{color:"#4fc3f7",fontFamily:"monospace",fontSize:10}}>v1.0.0 · Mars 2026</span></div>
                     },
                     { id:"gelistirici", ikon:"👤", baslik:"Développeur / Universitaire", renk:"#9c64f0",
                       icerik: <div style={{ display:"flex", alignItems:"center", gap:12 }}>
@@ -374,7 +374,7 @@ export default function App() {
                   ))}
 
                   <div style={{ textAlign:"center", padding:"8px 0 4px" }}>
-                    <div style={{ fontSize:10, color:"#4a5568", fontFamily:"monospace" }}>© 2026 NöroFen · Tous droits réservés</div>
+                    <div style={{ fontSize:10, color:"#4a5568", fontFamily:"monospace" }}>© 2026 NeuroFen · Tous droits réservés</div>
                   </div>
                 </div>
               )}
