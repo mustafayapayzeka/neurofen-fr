@@ -109,7 +109,7 @@ export default function App() {
 
   function mitKaydet() {
     if (!formDogrula()) return;
-    const kat = form.yeni.Kategori.trim() || form.kategori;
+    const kat = form.yeniKategori.trim() || form.kategori;
     const yeni = { id: duzenlemId || Date.now(), baslik:form.baslik.trim(), kategori:kat, emoji:form.emoji, mit:form.mit.trim(), bilim:form.bilim.trim(), fenBaglantisi:form.fenBaglantisi.trim(), alternatif:form.alternatif.trim(), kaynaklar:form.kaynaklar.split("\n").map(k=>k.trim()).filter(Boolean), anahtar_kelimeler:form.anahtar_kelimeler.split(",").map(k=>k.trim()).filter(Boolean) };
     if (duzenlemId) { setMitler(p => p.map(m => m.id === duzenlemId ? yeni : m)); setBasariMesaj("✅ Neuromythe mis à jour !"); }
     else { setMitler(p => [...p, yeni]); setBasariMesaj("✅ Nouveau neuromythe ajouté !"); }
