@@ -309,7 +309,7 @@ export default function App() {
 
                   {/* Vizyon */}
                   {[
-                    { id:"vizyon", ikon:"🧠", baslik:"Amaç & Vizyon", renk:"#4fc3f7",
+                    { id:"vizyon", ikon:"🧠", baslik:"Objectif & Vision & Vizyon", renk:"#4fc3f7",
                       icerik: <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.7, borderLeft:"2px solid rgba(79,195,247,0.3)", paddingLeft:10 }}>NöroFen est une application guide basée sur l'IA, développée pour détecter les mythes neuroscientifiques que les enseignants de sciences utilisent inconsciemment dans leurs plans de cours et proposer des alternatives scientifiques.<br/><br/><span style={{color:"#4fc3f7",fontFamily:"monospace",fontSize:10}}>v1.0.0 · Mart 2026</span></div>
                     },
                     { id:"gelistirici", ikon:"👤", baslik:"Geliştirici / Akademisyen", renk:"#9c64f0",
