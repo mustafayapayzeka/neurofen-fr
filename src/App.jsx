@@ -261,7 +261,7 @@ export default function App() {
               <div style={{ fontSize:10, color:"#4fc3f7", fontFamily:"monospace", letterSpacing:"1px", marginBottom:6 }}>✦ LE NEUROMYTHE DU JOUR</div>
               <div style={{ fontSize:15, fontWeight:600, color:"#fff", marginBottom:6 }}>{mitler[0]?.emoji} {mitler[0]?.baslik}</div>
               <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.6 }}>{mitler[0]?.mit.substring(0,100)}...</div>
-              <button onClick={()=>detayGit(mitler[0],"ana")} style={{ marginTop:10, background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 14px", fontSize:11, cursor:"pointer", fontFamily:"monospace" }}>Detayları Gör →</button>
+              <button onClick={()=>detayGit(mitler[0],"ana")} style={{ marginTop:10, background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 14px", fontSize:11, cursor:"pointer", fontFamily:"monospace" }}>Voir les détails →</button>
             </div>
 
             {/* Son araştırma önizleme */}
