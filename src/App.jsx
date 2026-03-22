@@ -249,7 +249,7 @@ export default function App() {
               <div style={{ fontSize:19, fontWeight:700, color:"#fff", letterSpacing:"-0.5px" }}>NöroFen</div>
               <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace" }}>Chasseuse de Neuromythes — Enseigner avec la Science</div>
             </div>
-            <div style={{ marginLeft:"auto", fontSize:11, color:"#7986a3", fontFamily:"monospace" }}>{mitler.length} mit</div>
+            <div style={{ marginLeft:"auto", fontSize:11, color:"#7986a3", fontFamily:"monospace" }}>{mitler.length} mythes</div>
           </div>
         </div>
 
