@@ -258,7 +258,7 @@ export default function App() {
           <div style={{ padding:"18px 16px" }}>
             {/* Günün mitosu */}
             <div style={{ background:"linear-gradient(135deg,rgba(79,195,247,0.1),rgba(156,100,240,0.1))", border:"1px solid rgba(79,195,247,0.18)", borderRadius:16, padding:18, marginBottom:16 }}>
-              <div style={{ fontSize:10, color:"#4fc3f7", fontFamily:"monospace", letterSpacing:"1px", marginBottom:6 }}>✦ GÜNÜN NÖROMİTİ</div>
+              <div style={{ fontSize:10, color:"#4fc3f7", fontFamily:"monospace", letterSpacing:"1px", marginBottom:6 }}>✦ LE NEUROMYTHE DU JOUR</div>
               <div style={{ fontSize:15, fontWeight:600, color:"#fff", marginBottom:6 }}>{mitler[0]?.emoji} {mitler[0]?.baslik}</div>
               <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.6 }}>{mitler[0]?.mit.substring(0,100)}...</div>
               <button onClick={()=>detayGit(mitler[0],"ana")} style={{ marginTop:10, background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 14px", fontSize:11, cursor:"pointer", fontFamily:"monospace" }}>Detayları Gör →</button>
@@ -310,7 +310,7 @@ export default function App() {
                   {/* Vizyon */}
                   {[
                     { id:"vizyon", ikon:"🧠", baslik:"Objectif & Vision", renk:"#4fc3f7",
-                      icerik: <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.7, borderLeft:"2px solid rgba(79,195,247,0.3)", paddingLeft:10 }}>NöroFen est une application guide basée sur l'IA, développée pour détecter les mythes neuroscientifiques que les enseignants de sciences utilisent inconsciemment dans leurs plans de cours et proposer des alternatives scientifiques.<br/><br/><span style={{color:"#4fc3f7",fontFamily:"monospace",fontSize:10}}>v1.0.0 · Mart 2026</span></div>
+                      icerik: <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.7, borderLeft:"2px solid rgba(79,195,247,0.3)", paddingLeft:10 }}>NöroFen est une application guide basée sur l'IA, développée pour détecter les mythes neuroscientifiques que les enseignants de sciences utilisent inconsciemment dans leurs plans de cours et proposer des alternatives scientifiques.<br/><br/><span style={{color:"#4fc3f7",fontFamily:"monospace",fontSize:10}}>v1.0.0 · Mars 2026</span></div>
                     },
                     { id:"gelistirici", ikon:"👤", baslik:"Développeur / Universitaire", renk:"#9c64f0",
                       icerik: <div style={{ display:"flex", alignItems:"center", gap:12 }}>
@@ -374,7 +374,7 @@ export default function App() {
                   ))}
 
                   <div style={{ textAlign:"center", padding:"8px 0 4px" }}>
-                    <div style={{ fontSize:10, color:"#4a5568", fontFamily:"monospace" }}>© 2026 NöroFen · Tüm hakları saklıdır</div>
+                    <div style={{ fontSize:10, color:"#4a5568", fontFamily:"monospace" }}>© 2026 NöroFen · Tous droits réservés</div>
                   </div>
                 </div>
               )}
