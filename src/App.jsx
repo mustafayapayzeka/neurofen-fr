@@ -484,7 +484,7 @@ export default function App() {
         {aktifEkran === "kutuphane" && (
           <div style={{ padding:"18px 16px" }}>
             <div style={{ display:"flex", alignItems:"center", marginBottom:4 }}>
-              <div style={{ fontSize:17, fontWeight:700, color:"#fff" }}>📚 Nöromit Kütüphanesi</div>
+              <div style={{ fontSize:17, fontWeight:700, color:"#fff" }}>📚 La bibliothèque des neuromythes</div>
               <button onClick={()=>{setForm(BOŞ_FORM);setDuzenlemId(null);setFormHata({});setAktifEkran("mitEkle");}}
                 style={{ marginLeft:"auto", background:"rgba(79,195,247,0.12)", border:"1px solid rgba(79,195,247,0.25)", color:"#4fc3f7", borderRadius:8, padding:"6px 12px", fontSize:12, cursor:"pointer", fontWeight:600 }}>+ Yeni Mit</button>
             </div>
