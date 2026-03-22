@@ -693,7 +693,7 @@ export default function App() {
         {/* ── CHAT ────────────────────────────────────────────────────── */}
         {aktifEkran === "chat" && (
           <div style={{ padding:"18px 16px", display:"flex", flexDirection:"column", height:"calc(100vh - 160px)" }}>
-            <div style={{ fontSize:17, fontWeight:700, color:"#fff", marginBottom:4 }}>💬 AI Asistan</div>
+            <div style={{ fontSize:17, fontWeight:700, color:"#fff", marginBottom:4 }}>💬 Votre assistant IA</div>
             <div style={{ fontSize:12, color:"#7986a3", marginBottom:14 }}>Posez vos questions sur les neuromythes</div>
             <div style={{ flex:1, overflowY:"auto", marginBottom:10, display:"flex", flexDirection:"column", gap:10 }}>
               {chatMesajlar.map((m,i) => (
