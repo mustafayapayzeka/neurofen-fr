@@ -300,7 +300,7 @@ export default function App() {
               <button onClick={()=>setAkkordeon(akkordeon?"":"acik")}
                 style={{ width:"100%", background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:13, padding:"13px 16px", display:"flex", alignItems:"center", cursor:"pointer" }}>
                 <span style={{ fontSize:16, marginRight:8 }}>ℹ️</span>
-                <span style={{ fontSize:13, fontWeight:600, color:"#fff", flex:1, textAlign:"left" }}>Uygulama Hakkında</span>
+                <span style={{ fontSize:13, fontWeight:600, color:"#fff", flex:1, textAlign:"left" }}>À propos de l'application</span>
                 <span style={{ color:"#7986a3", fontSize:14, transition:"transform 0.3s", transform:akkordeon?"rotate(180deg)":"rotate(0deg)" }}>▾</span>
               </button>
 
@@ -309,20 +309,20 @@ export default function App() {
 
                   {/* Vizyon */}
                   {[
-                    { id:"vizyon", ikon:"🧠", baslik:"Objectif & Vision & Vizyon", renk:"#4fc3f7",
+                    { id:"vizyon", ikon:"🧠", baslik:"Objectif & Vision", renk:"#4fc3f7",
                       icerik: <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.7, borderLeft:"2px solid rgba(79,195,247,0.3)", paddingLeft:10 }}>NöroFen est une application guide basée sur l'IA, développée pour détecter les mythes neuroscientifiques que les enseignants de sciences utilisent inconsciemment dans leurs plans de cours et proposer des alternatives scientifiques.<br/><br/><span style={{color:"#4fc3f7",fontFamily:"monospace",fontSize:10}}>v1.0.0 · Mart 2026</span></div>
                     },
-                    { id:"gelistirici", ikon:"👤", baslik:"Geliştirici / Akademisyen", renk:"#9c64f0",
+                    { id:"gelistirici", ikon:"👤", baslik:"Développeur / Universitaire", renk:"#9c64f0",
                       icerik: <div style={{ display:"flex", alignItems:"center", gap:12 }}>
                         <div style={{ width:44, height:44, borderRadius:"50%", background:"linear-gradient(135deg,#9c64f0,#f06292)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:20, flexShrink:0 }}>🎓</div>
                         <div>
-                          <div style={{ fontSize:13, fontWeight:600, color:"#fff" }}>Mustafa Yapayzeka</div>
-                          <div style={{ fontSize:11, color:"#9aa5be", marginTop:2 }}>Fen Bilimleri Eğitimi Araştırmacısı</div>
-                          <div style={{ fontSize:11, color:"#7986a3", marginTop:2, fontFamily:"monospace" }}>Nöroeğitim · Öğretmen Eğitimi</div>
+                          <div style={{ fontSize:13, fontWeight:600, color:"#fff" }}>MCF. Mustafa Ergun</div>
+                          <div style={{ fontSize:11, color:"#9aa5be", marginTop:2 }}>Chercheur en didactique des sciences</div>
+                          <div style={{ fontSize:11, color:"#7986a3", marginTop:2, fontFamily:"monospace" }}>Neuroéducation · Formation des enseignants</div>
                         </div>
                       </div>
                     },
-                    { id:"kilavuz", ikon:"📖", baslik:"Nasıl Kullanılır?", renk:"#66bb6a",
+                    { id:"kilavuz", ikon:"📖", baslik:"Comment s’en servir ?", renk:"#66bb6a",
                       icerik: <div>{[
                         {no:"1",ikon:"🔍",baslik:"Analyse de texte",aciklama:"Collez votre plan de cours, l'IA détecte les neuromythes."},
                         {no:"2",ikon:"📚",baslik:"Bibliothèque",aciklama:"Explorez les neuromythes, apprenez les alternatives scientifiques."},
@@ -338,18 +338,18 @@ export default function App() {
                         </div>
                       ))}</div>
                     },
-                    { id:"versiyon", ikon:"🕐", baslik:"Versiyon Geçmişi", renk:"#ffb74d",
+                    { id:"versiyon", ikon:"🕐", baslik:"Historique des versions", renk:"#ffb74d",
                       icerik: <div style={{ display:"flex", gap:10, alignItems:"flex-start" }}>
                         <span style={{ background:"rgba(255,183,77,0.15)", color:"#ffb74d", borderRadius:6, padding:"2px 8px", fontSize:10, fontFamily:"monospace", flexShrink:0 }}>v1.0.0</span>
                         <div>
-                          <div style={{ fontSize:11, color:"#7986a3", fontFamily:"monospace" }}>Mart 2026</div>
-                          <div style={{ fontSize:12, color:"#c5cee0", marginTop:2 }}>İlk yayın — 6 nöromit, AI analiz, araştırma modülü</div>
+                          <div style={{ fontSize:11, color:"#7986a3", fontFamily:"monospace" }}>Mars 2026</div>
+                          <div style={{ fontSize:12, color:"#c5cee0", marginTop:2 }}>Première Publication — 6 Neuromythes, Analyse par l'IA, Module de Recherche</div>
                         </div>
                       </div>
                     },
-                    { id:"iletisim", ikon:"✉️", baslik:"İletişim & Geri Bildirim", renk:"#f06292",
+                    { id:"iletisim", ikon:"✉️", baslik:"Contact & Commentaires", renk:"#f06292",
                       icerik: <div>
-                        <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.6, marginBottom:10 }}>Öneri, hata bildirimi veya iş birliği için iletişime geçebilirsiniz.</div>
+                        <div style={{ fontSize:12, color:"#9aa5be", lineHeight:1.6, marginBottom:10 }}>Contactez-moi pour vos suggestions, retours d'erreurs ou opportunités de collaboration.</div>
                         {[{ikon:"📧",etiket:"E-posta",deger:"iletisim@neurofen.app"},{ikon:"🌐",etiket:"Web",deger:"neurofen.vercel.app"}].map(k=>(
                           <div key={k.etiket} style={{ display:"flex", alignItems:"center", gap:8, marginBottom:5 }}>
                             <span style={{ fontSize:13 }}>{k.ikon}</span>
