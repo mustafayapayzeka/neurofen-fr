@@ -538,7 +538,7 @@ export default function App() {
             ))}
             {secilenMit.kaynaklar.length > 0 && (
               <div style={{ background:"rgba(255,255,255,0.02)", border:"1px solid rgba(255,255,255,0.05)", borderRadius:10, padding:13 }}>
-                <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace", marginBottom:8 }}>📖 BİLİMSEL KAYNAKLAR</div>
+                <div style={{ fontSize:10, color:"#7986a3", fontFamily:"monospace", marginBottom:8 }}>📖 RÉFÉRENCES</div>
                 {secilenMit.kaynaklar.map((k,i) => <div key={i} style={{ fontSize:12, color:"#9aa5be", lineHeight:1.6, paddingLeft:8, borderLeft:"1px solid rgba(255,255,255,0.08)", marginBottom:5 }}>{k}</div>)}
               </div>
             )}
