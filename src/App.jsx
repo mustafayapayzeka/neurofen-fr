@@ -88,7 +88,7 @@ export default function App() {
     if (basariMesaj) { const t = setTimeout(() => setBasariMesaj(""), 3000); return () => clearTimeout(t); }
   }, [basariMesaj]);
 
-  const ler = ["Tous", ...new Set(mitler.map(n => n.kategori))];
+  const kategoriler = ["Tous", ...new Set(mitler.map(n => n.kategori))];
   const filtreliMitler = kategori === "Tous" ? mitler : mitler.filter(m => m.kategori === kategori);
   const mevcutKategoriler = [...new Set(mitler.map(n => n.kategori))];
 
